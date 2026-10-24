@@ -42,7 +42,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/companies-house@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/companies-house@sha256:0bcb0bee4cf80b15787e54058a6a85ca4f4f7241735557cc70971d64b20e96cf
   platforms: [linux/amd64, linux/arm64]
   command: ["companies-house", "--company", "{company}", "--number", "{number}", "--limit", "{limit}"]
   output_format: json
